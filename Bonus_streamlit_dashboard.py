@@ -39,7 +39,7 @@ col1.metric("Total Customers", total_customers)
 col2.metric("Churn Rate", f"{churn_rate:.1f}%")
 col3.metric("Avg MRR", f"${filtered_df['MonthlyRevenue'].mean():.2f}")
 total_cltv_value = filtered_df['CLTV'].sum()
-col4.metric("Total CLTV", f"${total_cltv_value:,.2f}")
+col4.metric("Total CLTV", f"${total_cltv_value:,.0f}")
 
 # Visualizations
 tab1, tab2, tab3 = st.tabs(["Churn Analysis", "Revenue Insights", "Customer Segments"])
